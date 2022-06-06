@@ -2,6 +2,7 @@ import React from "react";
 import { useSpring, animated, easings } from "react-spring";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlane } from "@fortawesome/free-solid-svg-icons";
+import Link from "next/link";
 
 import { useRouter } from "next/router";
 import path from "path";
@@ -36,22 +37,22 @@ export default function Navbar(state: any) {
     >
       {" "}
       <div className="h-full w-full text-white flex justify-around items-center">
-        <a href="/">
+        <Link href="/">
           <div className="font-bold text-2xl flex">
             <div>Transfers </div>
             <animated.div style={config}>
               <FontAwesomeIcon className="ml-2" icon={faPlane} />
             </animated.div>
           </div>
-        </a>
+        </Link>
         <div className="flex gap-6">
           {content.map((item) => (
-            <a href={item.url}>
+            <Link href={item.url}>
               <div className="hover:scale-105 transition-all duration-100 group">
                 <p>{item.title}</p>
                 <div className="w-0 h-[1px] bg-white group-hover:w-full transition-all duration-150"></div>
               </div>
-            </a>
+            </Link>
           ))}
         </div>
       </div>
@@ -62,22 +63,22 @@ export default function Navbar(state: any) {
     <nav className="h-20 w-screen bg-black sticky">
       {" "}
       <div className="h-full w-full text-white flex justify-around items-center">
-        <a href="/">
+        <Link href="/">
           <div className="font-bold text-2xl flex">
             <div>Transfers</div>{" "}
             <animated.div style={config}>
               <FontAwesomeIcon className="ml-2" icon={faPlane} />
             </animated.div>
           </div>
-        </a>
+        </Link>
         <div className="flex gap-6">
           {content.map((item) => (
-            <a href={item.url}>
+            <Link href={item.url}>
               <div className="hover:scale-105 transition-all duration-100 group">
                 <p>{item.title}</p>
                 <div className="w-0 h-[1px] bg-white group-hover:w-full transition-all duration-150"></div>
               </div>
-            </a>
+            </Link>
           ))}
         </div>
       </div>
