@@ -73,7 +73,7 @@ export default function Navbar(state: any) {
         </Link>
         <div className="flex gap-6">
           {content.map((item) => (
-            <Link href={item.url}>
+            <Link href={item.url} key={item.url}>
               <div className="hover:scale-105 transition-all duration-100 group">
                 <p>{item.title}</p>
                 <div className="w-0 h-[1px] bg-white group-hover:w-full transition-all duration-150"></div>
