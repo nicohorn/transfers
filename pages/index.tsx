@@ -8,13 +8,6 @@ export default function Home() {
   return (
     <>
       <Slider />
-      <FloatingWhatsApp
-        phoneNumber="+54 9 11 4474-2207"
-        accountName="Diego"
-        avatar="/profilewpp.jpg"
-        statusMessage="Typically replies within 20 minutes"
-        chatMessage={`Hello there! 🤝 \nHow can I help? `}
-      />
     </>
   );
 }

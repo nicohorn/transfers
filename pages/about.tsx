@@ -10,7 +10,7 @@ import {
   faShuffle,
 } from "@fortawesome/free-solid-svg-icons";
 
-export default function about() {
+export default function About() {
   const [index, setIndex] = useState(0);
 
   const props1 = useSpring({

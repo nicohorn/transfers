@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import gsap from "gsap";
 
-export default function quoteSlider(props) {
+export default function QuoteSlider(props) {
   useEffect(() => {
     gsap.fromTo("#comp1, #comp2", { opacity: 0 }, { opacity: 1, duration: 1 });
   }, [props.quote]);

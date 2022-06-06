@@ -6,7 +6,7 @@ import { faPlane } from "@fortawesome/free-solid-svg-icons";
 import { useRouter } from "next/router";
 import path from "path";
 
-export default function navbar(state: any) {
+export default function Navbar(state: any) {
   const config = useSpring({
     to: { x: 10 },
     from: { x: 0 },
