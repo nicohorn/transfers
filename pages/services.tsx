@@ -102,7 +102,10 @@ export default function Services() {
       </div>
       <div className="grid grid-cols-3 place-items-center gap-1 my-10 px-48 ">
         {content.map((item, i) => (
-          <div className="hover:scale-[1.01] transition-all duration-150 hover:shadow shadow-none">
+          <div
+            key={i}
+            className="hover:scale-[1.01] transition-all duration-150 hover:shadow shadow-none"
+          >
             <Card
               key={i}
               id={`card${i}`}
