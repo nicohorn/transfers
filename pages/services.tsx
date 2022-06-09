@@ -104,6 +104,7 @@ export default function Services() {
         {content.map((item, i) => (
           <div className="hover:scale-[1.01] transition-all duration-150 hover:shadow shadow-none">
             <Card
+              key={i}
               id={`card${i}`}
               image={item.img}
               title={item.title}
