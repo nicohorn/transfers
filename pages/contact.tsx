@@ -2,7 +2,7 @@ import React from "react";
 import { useEffect } from "react";
 import gsap from "gsap";
 
-export default function contact() {
+export default function Contact() {
   useEffect(() => {
     gsap.fromTo(
       "#container",

@@ -4,7 +4,7 @@ import { gsap, Power4, Elastic } from "gsap";
 import { useEffect } from "react";
 import { setInterval } from "timers";
 
-export default function services() {
+export default function Services() {
   const content = [
     {
       title: "Ezeiza transfers",
