@@ -33,13 +33,13 @@ export default function Navbar(state: any) {
   const navbar1 = (
     <animated.nav
       style={props}
-      className="h-20 w-screen bg-black bg-opacity-80 fixed"
+      className="h-20 w-screen bg-black bg-opacity-80 fixed sm:block hidden "
     >
       {" "}
       <div className="h-full w-full text-white flex justify-around items-center">
         <Link href="/">
-          <div className="font-bold text-2xl flex">
-            <div>Transfers </div>
+          <div className="font-bold text-2xl flex cursor-pointer active:scale-95 transition-all duration-200">
+            <div>Transfers and Tours </div>
             <animated.div style={config}>
               <FontAwesomeIcon className="ml-2" icon={faPlane} />
             </animated.div>
@@ -48,7 +48,7 @@ export default function Navbar(state: any) {
         <div className="flex gap-6">
           {content.map((item) => (
             <Link href={item.url} key={item.url}>
-              <div className="hover:scale-105 transition-all duration-100 group">
+              <div className="hover:scale-105 transition-all duration-100 group cursor-pointer active:scale-95">
                 <p>{item.title}</p>
                 <div className="w-0 h-[1px] bg-white group-hover:w-full transition-all duration-150"></div>
               </div>
@@ -60,12 +60,12 @@ export default function Navbar(state: any) {
   );
 
   const navbar2 = (
-    <nav className="h-20 w-screen bg-black sticky">
+    <nav className="h-20 w-screen bg-black sticky  sm:block hidden">
       {" "}
       <div className="h-full w-full text-white flex justify-around items-center">
         <Link href="/">
-          <div className="font-bold text-2xl flex">
-            <div>Transfers</div>{" "}
+          <div className="font-bold text-2xl flex cursor-pointer active:scale-95 transition-all duration-200">
+            <div>Transfers and Tours</div>{" "}
             <animated.div style={config}>
               <FontAwesomeIcon className="ml-2" icon={faPlane} />
             </animated.div>
@@ -74,7 +74,7 @@ export default function Navbar(state: any) {
         <div className="flex gap-6">
           {content.map((item) => (
             <Link href={item.url} key={item.url}>
-              <div className="hover:scale-105 transition-all duration-100 group">
+              <div className="hover:scale-105 transition-all duration-100 group cursor-pointer active:scale-95">
                 <p>{item.title}</p>
                 <div className="w-0 h-[1px] bg-white group-hover:w-full transition-all duration-150"></div>
               </div>

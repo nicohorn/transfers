@@ -13,6 +13,7 @@ function MyApp({ Component, pageProps }) {
         avatar="/profilewpp.jpg"
         statusMessage="Typically replies within 20 minutes"
         chatMessage={`Hello there! 🤝 \nHow can I help? `}
+        className="z-20"
       />
       <Navbar />
       <Component {...pageProps} />

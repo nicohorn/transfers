@@ -22,7 +22,7 @@ export default function About() {
   const props2 = useSpring({
     to: { opacity: 1 },
     from: { opacity: 0 },
-    delay: 700,
+    delay: 300,
     config: { duration: 400 },
   });
 

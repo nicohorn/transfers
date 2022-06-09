@@ -1,9 +1,11 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { setTimeout } from "timers";
 import { useSpring, animated } from "react-spring";
+import gsap from "gsap";
+import { setInterval } from "timers/promises";
 
 export default function Slider() {
   const images = ["bg-img1", "bg-img2", "bg-img3", "bg-img4", "bg-img5"];
@@ -17,7 +19,7 @@ export default function Slider() {
   function loop() {
     setTimeout(function () {
       index < images.length - 1 ? setIndex(index + 1) : setIndex(0);
-    }, 2000);
+    }, 5000);
   }
   loop();
 
@@ -35,11 +37,24 @@ export default function Slider() {
     config: { duration: 500 },
   });
 
+  useEffect(() => {
+    gsap.fromTo(
+      "#slider",
+      { autoAlpha: 0.8, scale: 1 },
+      { autoAlpha: 1, duration: 1, scale: 1.02 }
+    );
+  }, [index]);
+
   return (
-    <div
-      className={`bg-cover ${images[index]} w-screen h-screen bg-center transition-all duration-300 text-white`}
-    >
-      <div className="bg-black bg-opacity-40 h-full w-full flex justify-center items-center flex-col">
+    <>
+      <div
+        id="slider"
+        className={`bg-cover ${images[index]} w-screen h-screen bg-center fixed -z-10 text-white`}
+      >
+        <div className="h-full w-full bg-black bg-opacity-30"></div>
+      </div>
+
+      <div className="text-white bg-black bg-opacity-40 h-screen w-screen flex justify-center items-center flex-col">
         <animated.span style={props1} className="text-5xl mb-2">
           Explore
         </animated.span>
@@ -55,6 +70,6 @@ export default function Slider() {
           libero!
         </animated.div>
       </div>
-    </div>
+    </>
   );
 }
