@@ -9,52 +9,52 @@ export default function Services() {
     {
       title: "Ezeiza transfers",
       desc: "Transfer between Ezeiza airport and the city",
-      img: "/ezeiza.jpg",
+      img: "/ezeiza.webp",
     },
     {
       title: "Aeroparque transfers",
       desc: "Transfer between Aeroparque airport and the city",
-      img: "/aeroparque.jpg",
+      img: "/aeroparque.webp",
     },
     {
       title: "City tour",
       desc: "Take the Buenos Aires City Tour and go over the most important districts of the Argentine capital.",
-      img: "/cabildo.jpg",
+      img: "/cabildo.webp",
     },
     {
       title: "Wine tasting",
       desc: "Enjoy the best malbecs wine of Argentina with our sommeliers.",
-      img: "/winetasting.jpg",
+      img: "/winetasting.webp",
     },
     {
       title: "Tango show",
       desc: "Enjoy a memorable night out in Buenos Aires and experience the passion of the Argentine tango.",
-      img: "/tangoshow.jpg",
+      img: "/tangoshow.webp",
     },
     {
       title: "Gaucho day",
       desc: "Visit a typical Argentinean gaucho ranch and enjoy a tipical barbecue for lunch.",
-      img: "/gaucho.jpeg",
+      img: "/gaucho.webp",
     },
     {
       title: "Delta Tigre day",
       desc: "Escape the city for a tour of the Tigre River Delta and San Isidro from Buenos Aires.",
-      img: "/tigre.jpg",
+      img: "/tigre.webp",
     },
     {
       title: "Polo day",
       desc: "Take polo lessons in the Argentine pampas on this full-day trip from Buenos Aires.",
-      img: "/polo.jpg",
+      img: "/polo.webp",
     },
     {
       title: "Craft shopping day",
       desc: "Shopping in the best souvenirs stores.",
-      img: "/craft.jpg",
+      img: "/craft.webp",
     },
     {
       title: "Tango lessons",
       desc: "Be a tango dancer in Buenos Aires. ",
-      img: "/tango.jpg",
+      img: "/tango.webp",
     },
   ];
 
