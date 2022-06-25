@@ -6,12 +6,12 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        img1: "url('/hero/barco.jpg')",
-        img2: "url('/hero/cabildo.jpg')",
-        img3: "url('/hero/library.jpg')",
-        img4: "url('/hero/panamericana.jpg')",
-        img5: "url('/hero/puertomadero.jpg')",
-        img6: "url('/buenosaires1.jpg')",
+        img1: "url('/hero/barco.webp')",
+        img2: "url('/hero/cabildo.webp')",
+        img3: "url('/hero/library.webp')",
+        img4: "url('/hero/panamericana.webp')",
+        img5: "url('/hero/puertomadero.webp')",
+        img6: "url('/buenosaires1.webp')",
       },
     },
   },
