@@ -5,9 +5,5 @@ import Slider from "./components/slider";
 import FloatingWhatsApp from "react-floating-whatsapp";
 
 export default function Home() {
-  return (
-    <>
-      <Slider />
-    </>
-  );
+  return <Slider />;
 }

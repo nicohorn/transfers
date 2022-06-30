@@ -60,7 +60,7 @@ export default function Navbar(state: any) {
   );
 
   const navbar2 = (
-    <nav className="h-20 w-screen bg-black sticky  sm:block hidden">
+    <nav className="h-20 w-[calc(100vw-(100vw - 100%))] bg-black sticky  sm:block hidden ">
       {" "}
       <div className="h-full w-full text-white flex justify-around items-center">
         <Link href="/">

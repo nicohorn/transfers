@@ -11,7 +11,7 @@ function MyApp({ Component, pageProps }) {
         phoneNumber="+54 9 11 4474-2207"
         accountName="Diego"
         avatar="/profilewpp.jpg"
-        statusMessage="Typically replies within 20 minutes"
+        statusMessage="If I am not riding I will reply on next 10 minutes."
         chatMessage={`Hello there! 🤝 \nHow can I help? `}
         className="z-20"
       />
