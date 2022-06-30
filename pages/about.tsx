@@ -10,6 +10,7 @@ import {
   faShuffle,
   faCheckCircle,
 } from "@fortawesome/free-solid-svg-icons";
+import Link from "next/link";
 
 export default function About() {
   const [index, setIndex] = useState(0);
@@ -66,11 +67,11 @@ export default function About() {
           overwhelming experiences to our customers by tailor made products
           according to their preferences. We offer roundtrips from the airports
           or terminal cruises to the city and a variety of tours :{" "}
-          <a href="/services">
+          <Link href="/services">
             <p className="font-bold transition-all duration-100 hover:text-white hover:bg-black p-2">
               City tour, Gaucho tour, Tango tour, Delta tour.
             </p>
-          </a>
+          </Link>
         </div>
         <animated.div
           style={props2}
