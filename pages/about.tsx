@@ -132,7 +132,7 @@ export default function About() {
         </div>
         <div>
           <div className="mx-auto  my-10 text-3xl">
-            Authorized by the city of buenos aires to work in private
+            Authorized by the city of Buenos Bires to work in private
             transportation
           </div>
           <div className="mx-auto ] mb-20 text-3xl">
