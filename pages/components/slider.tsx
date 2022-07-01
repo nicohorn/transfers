@@ -104,7 +104,7 @@ export default function Slider() {
           </div>
         </animated.div>
         <animated.div className="z-10 mt-10 flex gap-10" style={props3}>
-          <a href="https://walink.co/fd107e" target="_blank">
+          <a href="https://walink.co/fd107e" target="_blank" rel="noreferrer">
             <div className="w-[30rem] bg-black p-10 bg-opacity-30 hover:scale-105 transition-all duration-300">
               <h1 className="text-2xl text-center h-16">
                 International airport <b>(EZE)</b> transfers
@@ -116,7 +116,7 @@ export default function Slider() {
               <Image src={content[0].img} width={600} height={400}></Image>
             </div>
           </a>
-          <a href="https://walink.co/fd107e" target="_blank">
+          <a href="https://walink.co/fd107e" target="_blank" rel="noreferrer">
             <div className="w-[30rem] p-10 bg-black bg-opacity-30 hover:scale-105 transition-all duration-300">
               <h1 className="text-2xl text-center h-16">
                 Local airport <b>(AEP)</b> transfers
@@ -128,7 +128,7 @@ export default function Slider() {
               <Image src={content[1].img} width={600} height={400}></Image>
             </div>
           </a>
-          <a href="https://walink.co/fd107e" target="_blank">
+          <a href="https://walink.co/fd107e" target="_blank" rel="noreferrer">
             <div className="w-[30rem] p-10 bg-black bg-opacity-30 hover:scale-105 transition-all duration-300">
               <h1 className="text-xl text-center h-16">
                 Cruise Terminal <b>(Benito Quinquela Martín)</b> transfers
