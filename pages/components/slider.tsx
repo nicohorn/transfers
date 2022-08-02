@@ -70,25 +70,25 @@ export default function Slider() {
     <>
       <div
         id="slider"
-        className={`bg-cover ${images[index]} w-screen h-screen bg-center fixed -z-10 text-white`}
+        className={`bg-cover ${images[index]} w-screen h-screen bg-center fixed -z-10 text-white `}
       >
-        <div className="h-full w-full bg-black bg-opacity-30"></div>
+        <div className="h-screen w-screen bg-black bg-opacity-30 "></div>
       </div>
 
-      <div className="text-white bg-black bg-opacity-40 h-screen w-screen flex justify-center items-center flex-col">
+      <div className=" text-white bg-black bg-opacity-40 min-h-screen w-screen flex justify-center items-center flex-col">
         <animated.span
           style={props1}
-          className=" mb-2 flex items-end gap-3 text-7xl mt-16"
+          className=" mb-2 md:flex md:items-end md:gap-3 text-center text-5xl mt-40 lg:mt-0 "
         >
           Welcome to{" "}
-          <animated.p style={props1} className="font-bold text-7xl">
+          <animated.p style={props1} className="font-bold text-5xl">
             Buenos Aires
           </animated.p>
         </animated.span>
 
         <animated.div
           style={props2}
-          className="mt-5 w-[35%] text-center flex flex-col"
+          className="mt-5 w-[70%] text-center flex flex-col"
         >
           <div className="mb-5 text-xl">
             <div>
@@ -103,9 +103,12 @@ export default function Slider() {
             <b>professional and reliable english speaking driver.</b>
           </div>
         </animated.div>
-        <animated.div className="z-10 mt-10 flex gap-10" style={props3}>
+        <animated.div
+          className="flex xl:flex-row flex-col gap-10 scale-[.95] lg:mt-10"
+          style={props3}
+        >
           <a href="https://walink.co/fd107e" target="_blank" rel="noreferrer">
-            <div className="w-[30rem] bg-black p-10 bg-opacity-30 hover:scale-105 transition-all duration-300">
+            <div className="w-[25rem] bg-black p-10 md: bg-opacity-30 hover:scale-105 transition-all duration-300">
               <h1 className="text-2xl text-center h-16">
                 International airport <b>(EZE)</b> transfers
               </h1>
@@ -117,7 +120,7 @@ export default function Slider() {
             </div>
           </a>
           <a href="https://walink.co/fd107e" target="_blank" rel="noreferrer">
-            <div className="w-[30rem] p-10 bg-black bg-opacity-30 hover:scale-105 transition-all duration-300">
+            <div className="w-[25rem] p-10 bg-black bg-opacity-30 hover:scale-105 transition-all duration-300">
               <h1 className="text-2xl text-center h-16">
                 Local airport <b>(AEP)</b> transfers
               </h1>
@@ -129,7 +132,7 @@ export default function Slider() {
             </div>
           </a>
           <a href="https://walink.co/fd107e" target="_blank" rel="noreferrer">
-            <div className="w-[30rem] p-10 bg-black bg-opacity-30 hover:scale-105 transition-all duration-300">
+            <div className="w-[25rem] p-10 bg-black bg-opacity-30 hover:scale-105 transition-all duration-300">
               <h1 className="text-xl text-center h-16">
                 Cruise Terminal <b>(Benito Quinquela Martín)</b> transfers
               </h1>

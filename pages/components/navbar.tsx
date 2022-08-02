@@ -33,7 +33,7 @@ export default function Navbar(state: any) {
   const navbar1 = (
     <animated.nav
       style={props}
-      className="h-20 w-screen bg-black bg-opacity-80 fixed sm:block hidden "
+      className="h-20 w-screen bg-black bg-opacity-80  sm:block hidden fixed top-0 z-50"
     >
       {" "}
       <div className="h-full w-full text-white flex justify-around items-center">
